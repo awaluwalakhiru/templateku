@@ -1,4 +1,17 @@
 .content {
-    margin-top: 65px;
-    margin-bottom: 65px;
+	margin-top: 65px;
+	margin-bottom: 65px;
+}
+
+a.nav-link::after {
+	content: '';
+	display: block;
+	width: 50px;
+	border-bottom: 2px solid blue;
+	transform: scaleX(0);
+	transition: transform .4s ease-in-out;
+}
+
+a.nav-link:hover::after {
+	transform: scaleX(1);
 }
